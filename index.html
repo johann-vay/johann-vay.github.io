@@ -3,59 +3,113 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title> Hello World ! </title>
+		<title> Bases HTML</title>
 	</head>
 	
 	<body>
-		<h1> Ceci est un test !! </h1>
-		<h2> Ceci est un test !! </h2>
-		<h3> Ceci est un test !! </h3>
-		<h4> Ceci est un test !! </h4>
-		<h5> Ceci est un test !! </h5>
-		<h6> Ceci est un test !! </h6>
+		
+		<h1> Ceci est un titre h1 ! </h1>
+		<h2> Ceci est un titre h2 ! </h2>
+		<h3> Ceci est un titre h3 ! </h3>
+		<h4> Ceci est un titre h4 ! </h4>
+		<h5> Ceci est un titre h5 ! </h5>
+		<h6> Ceci est un titre h6 ! </h6>
 		<br />
-		<hr />
-		<fieldset><legend>Paragraphe</legend>
+		
+		Version html (au début du fichier) : &lt;!DOCTYPE html&gt;
+		<br />
+		Encodage du fichier (pour les caractères accentués par exemple) : &lt;meta charset="utf-8" /&gt;
+		
+		<br /><br />
+		
+		Structure document html : 
+		<pre>
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+				&lt;head&gt;
+					&lt;meta charset="utf-8" /&gt;
+					&lt;title> Titre page &lt;/title&gt;
+				&lt;/head&gt;
+				
+				&lt;body&gt;
+					Texte.....
+				&lt;body/&gt;
+			&lt;/html&gt;
+		</pre>
+		
+		Affichage de code (php, pour l'exemple) : balise code 
+		<pre>
+			<code>
+				for(i=0; i<10; i++){
+					echo i;
+				}
+			</code>
+		</pre>
+		
+		<fieldset><legend>Paragraphe : balise p</legend>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
 				Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
 				Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
-				Curabitur sed dolor sed ante tincidunt lacinia. In congue, <em>tortor sit</em> amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
+				Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
+				Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
+				Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
+				Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
+				Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
+				Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
 				Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
 				Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
 			</p>
 		</fieldset>
-		<p>
-			Nullam varius dolor nibh, et porttitor mauris iaculis non. 
-			Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-			Suspendisse vitae eros dui. Phasellus pulvinar felis sed nunc condimentum, eu finibus nisl tempus. 
-			Nullam sodales semper tortor, in consequat libero bibendum eu. Aliquam sit amet pharetra ex. Vivamus eleifend ex in tempus aliquam. 
-			Phasellus sagittis eget diam a rutrum. Suspendisse potenti. Donec quam nibh, consectetur id tellus in, malesuada tempus turpis. 
-			Vivamus eros lorem, accumsan sit amet sodales a, pharetra tincidunt ante. In lacinia velit velit, vel finibus erat scelerisque a. 
-			Ut luctus ligula id dictum dapibus.
-		</p>
-		<p>
-			Mauris lobortis tellus a laoreet vulputate.
-			Morbi ut consectetur leo. Nunc efficitur, nibh at euismod dictum, diam nibh tincidunt lorem, non bibendum nibh purus et leo. 
-			Mauris nec consequat lorem. Fusce vel elit id magna euismod sollicitudin vel non diam. 
-			Duis convallis nisi non orci mollis convallis. Ut quam nisl, pellentesque sit amet lorem et, fermentum interdum felis. 
-			Curabitur magna felis, sodales eu justo at, venenatis hendrerit arcu. Nam porta nunc vel nibh gravida, at convallis quam fringilla. 
-			Pellentesque ut ligula et purus vehicula hendrerit.
-		</p>
-			
-		<ul>
-			<li>Item 1</li>
-			<li>Item 2</li>
-		</ul>
-		<ol>
-			<li>Item 1</li>
-			<li>Item 2</li>
-		</ol>
-		<dl>
-			<dt>Item 1</dt>
-				<dd> Definition item 1</dd>
-			<dt>Item 2</dt>
-				<dd> Definition item 2</dd>
-		</dl>
+		<br />
+		<fieldset><legend>Effets sur texte</legend>
+			Balise strong : <strong>Texte</strong> <br />
+			Balise em : <em>Texte</em><br />
+			Balise mark : <mark>Texte</mark><br />
+		</fieldset>
+		<br />
+		
+		<fieldset> <legend>Liste désordonnée : ul / li</legend>
+			<ul>
+				<li>Item 1</li>
+				<li>Item 2</li>
+			</ul>
+		</fieldset>
+		
+		<br />
+		
+		<fieldset> <legend>Liste ordonnée : ol / li</legend>
+			<ol>
+				<li>Item 1</li>
+				<li>Item 2</li>
+			</ol>
+		</fieldset>
+		
+		<br />
+		
+		<fieldset> <legend>Liste de définitions : dl / dt / dd</legend>
+			<dl>
+				<dt>Item 1</dt>
+					<dd> Definition item 1</dd>
+				<dt>Item 2</dt>
+					<dd> Definition item 2</dd>
+			</dl>
+		</fieldset>
+		
+		<br />
+		
+		<fieldset> <legend>Texte pré formaté : balise pre</legend>
+			<pre>
+				Lorem ipsum dolor sit amet, 
+				consectetur adipiscing elit. 
+				Cras dolor magna, commodo vel molestie vitae, 
+				ornare ac turpis. Fusce a.
+			</pre>
+		</fieldset>
+		
+		<br />
 	</body>
 </html>
