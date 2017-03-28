@@ -25,6 +25,7 @@
 				<li><a href="#liordo">Liste ordonnée</a></li>
 				<li><a href="#lidef">Liste de définitions</a></li>
 				<li><a href="#prefor">Texte préformaté</a></li>
+				<li><a href="#tableau">Les tableaux</a></li>
 			</ul>
 		</nav>
 		
@@ -149,6 +150,88 @@
 					Cras dolor magna, commodo vel molestie vitae, 
 					ornare ac turpis. Fusce a.
 				</pre>
+			</article>
+			
+			<article id="tableau">
+				<u>Les tableaux</u>
+				<p>
+					En HTML, les tableaux sont construits sont un ensemble de lignes, qui contiennent des cellules (les colonnes ne sont pas représentées).
+				</p>
+				<p>
+					Un tableau est défini grâce à la balise &lt;table&gt;&lt;/table&gt;
+				</p>
+				<p>
+					Le titre du tableau est défini grâce à la balise &lt;caption&gt;&lt;/caption&gt;
+				</p>
+				<p>
+					Une ligne du tableau est définie grâce à la balise &lt;tr&gt;&lt;/tr&gt;
+				</p>
+				<p>
+					Une cellule du tableau est définie grâce à la balise &lt;td&gt;&lt;/td&gt;
+				</p>
+				<p>
+					L'en-tête d'un tableau est défini grâce à la balise &lt;thead&gt;&lt;/thead&gt;. 
+					Chaque cellule d'en-tête sera définie par la balise &lt;th&gt;&lt;/th&gt; (cellules qui sont déclarées dans une ligne &lt;tr&gt;&lt;/tr&gt;
+				</p>
+				<p>
+					Le corps du tableau est déclaré grâce à la balise &lt;tbody&gt;&lt;/tbody&gt;. Il contiendra les lignes qui contiendront donc les cellules.
+				</p>
+				<p>
+					Le pied de tableau est déclaré grâce à la balise &lt;tfoot&gt;&lt;/tfoot&gt;. Il contiendra les lignes qui contiendront donc les cellules.
+				</p>
+				
+				Exemple :
+				<pre>
+					&lt;table&gt;
+						&lt;caption&gt;Passagers du vol 377&lt;/caption&gt;
+						
+						&lt;thead&gt; &lt;!-- En-tête du tableau --&gt;
+						   &lt;tr&gt;
+							   &lt;th&gt;Nom&lt;/th&gt;
+							   &lt;th&gt;Âge&lt;/th&gt;
+							   &lt;th&gt;Pays&lt;/th&gt;
+						   &lt;/tr&gt;
+						&lt;/thead&gt;
+						&lt;tbody&gt; &lt;!-- Corps du tableau --&gt;
+						   &lt;tr&gt;
+							   &lt;td&gt;Carmen&lt;/td&gt;
+							   &lt;td&gt;33 ans&lt;/td&gt;
+							   &lt;td&gt;Espagne&lt;/td&gt;
+						   &lt;/tr&gt;
+						   &lt;tr&gt;
+							   &lt;td&gt;Luc&lt;/td&gt;
+							   &lt;td&gt;26 ans&lt;/td&gt;
+							   &lt;td&gt;États-Unis&lt;/td&gt;
+						   &lt;/tr&gt;
+						   &lt;tr&gt;
+						&lt;/tbody&gt;
+						&lt;tfoot&gt; &lt;!-- Pied de tableau --&gt;
+						   &lt;tr&gt;
+							   &lt;th&gt;Nom&lt;/th&gt;
+							   &lt;th&gt;Âge&lt;/th&gt;
+							   &lt;th&gt;Pays&lt;/th&gt;
+						   &lt;/tr&gt;
+						&lt;/tfoot&gt;
+					&lt;/table&gt;
+				</pre>
+				<p>
+					La fusion de cellules (largeur de cellule) se fait dans la balise de cellule, avec l'attribut "colspan" qui prendra la valeur du nombre de cellules voulues. 
+					<pre>
+						&lt;td colspan="2"&gt;&lt;/td&gt;.
+					</pre>
+				</p>
+				<p>
+					La fusion de lignes (hauteur de cellule) se fait dans la balise de cellule, avec l'attribut "rowspan" qui prendra la valeur du nombre de lignes voulues.
+					<pre>
+						&lt;td rowlspan="2"&gt;&lt;/td&gt;.
+					</pre>
+				</p>
+				<p>
+					La balise &lt;colgroup&gt;&lt;/colgroup&gt définit un groupe de colonnes au sein d'un tableau.
+				</p>
+				<p>
+					La balise &lt;col&gt;&lt;/col&gt définit une colonne appartenant à un tableau. On la trouve généalement au sein d'une balise &lt;colgroup&gt;&lt;/colgroup&gt.
+				</p>
 			</article>
 		</section>
 		
