@@ -8,114 +8,139 @@
 	
 	<body>
 		
-		<h1> Ceci est un titre h1 ! </h1>
-		<h2> Ceci est un titre h2 ! </h2>
-		<h3> Ceci est un titre h3 ! </h3>
-		<h4> Ceci est un titre h4 ! </h4>
-		<h5> Ceci est un titre h5 ! </h5>
-		<h6> Ceci est un titre h6 ! </h6>
-		<br />
+		<header>
+			Présentation HTML
+		</header>
 		
-		Version html (au début du fichier) : &lt;!DOCTYPE html&gt;
-		<br />
-		Encodage du fichier (pour les caractères accentués par exemple) : &lt;meta charset="utf-8" /&gt;
-		
-		<br /><br />
-		
-		Structure document html : 
-		<pre>
-			&lt;!DOCTYPE html&gt;
-			&lt;html&gt;
-				&lt;head&gt;
-					&lt;meta charset="utf-8" /&gt;
-					&lt;title> Titre page &lt;/title&gt;
-				&lt;/head&gt;
-				
-				&lt;body&gt;
-					Texte.....
-				&lt;body/&gt;
-			&lt;/html&gt;
-		</pre>
-		
-		Affichage de code (php, pour l'exemple) : balise code 
-		<pre>
-			<code>
-				for(i=0; i<10; i++){
-					echo i;
-				}
-			</code>
-		</pre>
-		
-		<br />
-		
-		Afficher "&amp;" en texte : &amp;amp;<br />
-		Afficher "&lt;" en texte : &amp;lt;<br />
-		Afficher "&gt;" en texte : &amp;gt;<br />
-		
-		<br />
-		
-		<fieldset><legend>Paragraphe : balise p</legend>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
-				Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
-				Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
-				Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
-				Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
-				Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
-				Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
-				Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
-				Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
-				Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
-				Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
-			</p>
-		</fieldset>
-		<br />
-		<fieldset><legend>Effets sur texte</legend>
-			Balise strong : <strong>Texte</strong> <br />
-			Balise em : <em>Texte</em><br />
-			Balise mark : <mark>Texte</mark><br />
-		</fieldset>
-		<br />
-		
-		<fieldset> <legend>Liste désordonnée : ul / li</legend>
+		<nav>
 			<ul>
-				<li>Item 1</li>
-				<li>Item 2</li>
+				<li><a href="#structure">Structure</a><l/i>
+				<li><a href="#titres">Titres</a></li>
+				<li><a href="#code">Code</a></li>
+				<li><a href="#paragraphe">Paragraphe</a></li>
+				<li><a href="#effets">Effets</a></li>
+				<li><a href="#lideso">Liste désordonnée</a></li>
+				<li><a href="#liordo">Liste ordonnée</a></li>
+				<li><a href="#lidef">Liste de définitions</a></li>
+				<li><a href="#prefor">Texte préformaté</a></li>
 			</ul>
-		</fieldset>
+		</nav>	
 		
-		<br />
-		
-		<fieldset> <legend>Liste ordonnée : ol / li</legend>
-			<ol>
-				<li>Item 1</li>
-				<li>Item 2</li>
-			</ol>
-		</fieldset>
-		
-		<br />
-		
-		<fieldset> <legend>Liste de définitions : dl / dt / dd</legend>
-			<dl>
-				<dt>Item 1</dt>
-					<dd> Definition item 1</dd>
-				<dt>Item 2</dt>
-					<dd> Definition item 2</dd>
-			</dl>
-		</fieldset>
-		
-		<br />
-		
-		<fieldset> <legend>Texte pré formaté : balise pre</legend>
+		<section id="structure">				
+			<u>Structure document html :</u>
 			<pre>
-				Lorem ipsum dolor sit amet, 
-				consectetur adipiscing elit. 
-				Cras dolor magna, commodo vel molestie vitae, 
-				ornare ac turpis. Fusce a.
+				&lt;!DOCTYPE html&gt; &lt;!-- Définition du type de document --&gt;
+				&lt;html&gt;
+					&lt;head&gt;
+						&lt;meta charset="utf-8" /&gt;  &lt;!-- Encodage du document (pour les caractères accentués par exemple	 --&gt;
+						&lt;title> Titre page &lt;/title&gt;
+					&lt;/head&gt;
+					
+					&lt;body&gt;
+						Texte.....
+					&lt;body/&gt;
+				&lt;/html&gt;
 			</pre>
-		</fieldset>
+		</section>
+		<aside>
+			<pre>
+				Afficher "&amp;" en texte : &amp;amp;
+				Afficher "&lt;" en texte : &amp;lt;
+				Afficher "&gt;" en texte : &amp;gt;
+			</pre>
+		</aside>
+		
+		
+		<section>
+			<article id="titres">
+				<u>Les titres : balises h1 // h2 // h3 // h4 // h5 // h6</u>
+				<h1> Ceci est un titre h1 ! </h1>
+				<h2> Ceci est un titre h2 ! </h2>
+				<h3> Ceci est un titre h3 ! </h3>
+				<h4> Ceci est un titre h4 ! </h4>
+				<h5> Ceci est un titre h5 ! </h5>
+				<h6> Ceci est un titre h6 ! </h6>
+			</article>
+		
+			<article id="code">
+				<u>Affichage de code (php, pour l'exemple) : balise code</u>
+				<pre>
+					<code>
+						for(i=0; i<10; i++){
+							echo i;
+						}
+					</code>
+				</pre>
+			</article>
+		
+			<article id="paragraphe">
+				<u>Paragraphe : balise p</u>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
+					Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
+					Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
+					Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
+					Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
+					Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
+					Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
+					Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
+					Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
+					Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
+					Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
+				</p>
+			</article>
+			
+			<article id="effets">
+				<u>Effets sur texte</u>
+				<ul>
+					<li>Balise strong : <strong>Texte</strong></li>
+					<li>Balise em : <em>Texte</em></li>
+					<li>Balise mark : <mark>Texte</mark></li>
+				</ul>
+			</article>
+			
+			<article id="lideso">
+				<u>Liste désordonnée : ul / li</u>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+				</ul>
+			</article>
+		
+			<article id="liordo">
+				<u>Liste ordonnée : ol / li</u>
+				<ol>
+					<li>Item 1</li>
+					<li>Item 2</li>
+				</ol>
+			</article>
+		
+			<article id="lidef">
+				<u>Liste de définitions : dl / dt / dd</u>
+				<dl>
+					<dt>Item 1</dt>
+						<dd> Definition item 1</dd>
+					<dt>Item 2</dt>
+						<dd> Definition item 2</dd>
+				</dl>
+			</article>
+		
+			<article id="prefor">
+				<u>Texte pré formaté : balise pre</u>
+				<pre>
+					Lorem ipsum dolor sit amet, 
+					consectetur adipiscing elit. 
+					Cras dolor magna, commodo vel molestie vitae, 
+					ornare ac turpis. Fusce a.
+				</pre>
+			</article>
+		</section>
+		
+		<footer>
+			<a href="https://developer.mozilla.org/fr/docs/Web/HTML"  target="_blank">Infos HTML</a>
+		</footer>
 	</body>
 </html>
