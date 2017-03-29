@@ -1,0 +1,59 @@
+.titre{
+  text-align: center;
+  font-size: 70px;
+  text-decoration: underline;
+  background-color: #f1f1f1;
+}
+
+.menu{
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #f1f1f1;
+  height: 100%;
+  
+}
+
+.lienMenu {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.lienSousMenu {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.section{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.titreSection{
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.article{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.titreArticle{
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.paragraphe{
+  width: 1000px;
+  margin-bottom: 3px;
+}
