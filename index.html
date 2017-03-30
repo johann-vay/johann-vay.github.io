@@ -10,37 +10,39 @@
     </head>
     
     <body>
-      <div id="conteneur">  
         <header>
+          <div class="navbar">
+            <div class="blocimage">
+              <img src="html5logo.png" alt="Logo html 5" class="logoHTML"/>
+            </div>
+            <nav>
+              <ul>
+                <li class="lienMenu"><a href="#definition">Qu'est ce que le HTML ?</a></li>
+                <li class="lienMenu"><a href="#structure">Structure</a></li>
+                <li class="lienMenu">
+                  <a href="#balises">Les balises</a>
+                  <ul>
+                    <li class="lienSousMenu"><a href="#titres">Titres</a></li>
+                    <li class="lienSousMenu"><a href="#lien">Liens Hypertexte</a></li>
+                    <li class="lienSousMenu"><a href="#code">Code</a></li>
+                    <li class="lienSousMenu"><a href="#paragraphe">Paragraphe</a></li>
+                    <li class="lienSousMenu"><a href="#effets">Effets</a></li>
+                    <li class="lienSousMenu"><a href="#lideso">Liste désordonnée</a></li>
+                    <li class="lienSousMenu"><a href="#liordo">Liste ordonnée</a></li>
+                    <li class="lienSousMenu"><a href="#lidef">Liste de définitions</a></li>
+                    <li class="lienSousMenu"><a href="#prefor">Texte préformaté</a></li>
+                    <li class="lienSousMenu"><a href="#tableau">Les tableaux</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </nav>
+          </div>
           <div class="titre">
             <h1>Présentation HTML</h1>
-            <img src="html5logo.png" alt="Logo html 5" />
           </div>
         </header>
         
-        <div class="menu">
-          <nav>
-            <ul>
-              <li class="lienMenu"><a href="#definition">Qu'est ce que le HTML ?</a></li>
-              <li class="lienMenu"><a href="#structure">Structure</a></li>
-              <li class="lienMenu">
-                <a href="#balises">Les balises</a>
-                <ul>
-                  <li class="lienSousMenu"><a href="#titres">Titres</a></li>
-                  <li class="lienSousMenu"><a href="#code">Code</a></li>
-                  <li class="lienSousMenu"><a href="#paragraphe">Paragraphe</a></li>
-                  <li class="lienSousMenu"><a href="#effets">Effets</a></li>
-                  <li class="lienSousMenu"><a href="#lideso">Liste désordonnée</a></li>
-                  <li class="lienSousMenu"><a href="#liordo">Liste ordonnée</a></li>
-                  <li class="lienSousMenu"><a href="#lidef">Liste de définitions</a></li>
-                  <li class="lienSousMenu"><a href="#prefor">Texte préformaté</a></li>
-                  <li class="lienSousMenu"><a href="#tableau">Les tableaux</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-          </nav>
-        </div>
         
         <section id="definition" class="section">
           <h2 class="titreSection">Définition HTML :</h2>
@@ -55,17 +57,17 @@
           
         <section id="structure" class="section">                
           <h2 class="titreSection">Structure document HTML :</h2>
-          <pre>
+          <pre class="code">
             &lt;!DOCTYPE html&gt; &lt;!-- Définition du type de document --&gt;
             &lt;html&gt;
-              &lt;head&gt;
-                &lt;meta charset="utf-8" /&gt;  &lt;!-- Encodage du document (pour les caractères accentués par exemple  --&gt;
-                &lt;title> Titre page &lt;/title&gt;
-              &lt;/head&gt;
+                &lt;head&gt;
+                    &lt;meta charset="utf-8" /&gt;  &lt;!-- Encodage du document (pour les caractères accentués par exemple  --&gt;
+                    &lt;title> Titre page &lt;/title&gt;
+                &lt;/head&gt;
                       
-              &lt;body&gt;
-                Texte.....
-              &lt;body/&gt;
+                &lt;body&gt;
+                    Texte.....
+                  &lt;body/&gt;
             &lt;/html&gt;
           </pre>
         </section>
@@ -81,17 +83,22 @@
           <h2 id="balises" class="titreSection">Les balises</h2>
           <article id="titres" class="article">
             <h3 class="titreArticle">Les titres : balises h1 // h2 // h3 // h4 // h5 // h6</h3>
-            <h1> Ceci est un titre h1 ! </h1>
-            <h2> Ceci est un titre h2 ! </h2>
-            <h3> Ceci est un titre h3 ! </h3>
-            <h4> Ceci est un titre h4 ! </h4>
-            <h5> Ceci est un titre h5 ! </h5>
-            <h6> Ceci est un titre h6 ! </h6>
+            <h1 class="exh1"> Ceci est un titre h1 ! </h1>
+            <h2 class="exh2"> Ceci est un titre h2 ! </h2>
+            <h3 class="exh3"> Ceci est un titre h3 ! </h3>
+            <h4 class="exh4"> Ceci est un titre h4 ! </h4>
+            <h5 class="exh5"> Ceci est un titre h5 ! </h5>
+            <h6 class="exh6"> Ceci est un titre h6 ! </h6>
+          </article>
+          
+          <article id="lien" class="article">
+            <h3 class="titreArticle">Les liens hypertexte : balises a</h3>
+            <a href="lien.html" target="_blank"> Voici un exemple de lien </a>
           </article>
           
           <article id="code" class="article">
             <h3 class="titreArticle">Affichage de code (php, pour l'exemple) : balise code</h3>
-            <pre>
+            <pre class="code">
               <code>
                 for(i=0; i<10; i++){
                   echo i;
@@ -194,7 +201,7 @@
             </p>
                 
             Exemple :
-            <pre>
+            <pre class="code">
               &lt;table&gt;
                 &lt;caption&gt;Passagers du vol 377&lt;/caption&gt;
                           
@@ -249,9 +256,10 @@
           </article>
         </section>
           
-        <footer>
+        <footer class="footer">
+          Johann VAY 2017
           <a href="https://developer.mozilla.org/fr/docs/Web/HTML"  target="_blank">Infos HTML</a>
         </footer>
-      </div>
+
     </body>
 </html>
