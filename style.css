@@ -130,3 +130,10 @@
   max-height: 100%;
   max-width: 100%
 }
+
+.aside{
+  float: right;
+  border-width: 3px;
+  border-color: red;
+  border-style: solid;
+}
