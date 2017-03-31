@@ -10,246 +10,243 @@
     </head>
     
     <body class="body">
-        <header>
-          <div class="navbar">
-            <div class="blocimage">
-              <a href="index.html"><img src="html5logo.png" alt="Logo html 5" class="logoHTML"/></a>
-            </div>
-            <nav>
-              <ul>
-                <li class="lienMenu"><a href="#definition" class="lienAncre">Qu'est ce que le HTML ?</a></li>
-                <li class="lienMenu"><a href="#structure" class="lienAncre">Structure</a></li>
-                <li class="lienMenu">
-                  <a href="#balises" class="lienAncre">Les balises</a>
-                  <ul>
-                    <li class="lienSousMenu"><a href="#lien" class="lienAncre">Liens Hypertexte</a></li>
-                    <li class="lienSousMenu"><a href="#code" class="lienAncre">Code</a></li>
-                    <li class="lienSousMenu"><a href="#paragraphe" class="lienAncre">Paragraphe</a></li>
-                    <li class="lienSousMenu"><a href="#effets" class="lienAncre">Effets</a></li>
-                    <li class="lienSousMenu"><a href="#lideso" class="lienAncre">Liste désordonnée</a></li>
-                    <li class="lienSousMenu"><a href="#liordo" class="lienAncre">Liste ordonnée</a></li>
-                    <li class="lienSousMenu"><a href="#lidef" class="lienAncre">Liste de définitions</a></li>
-                    <li class="lienSousMenu"><a href="#prefor" class="lienAncre">Texte préformaté</a></li>
-                    <li class="lienSousMenu"><a href="#tableau" class="lienAncre">Les tableaux</a></li>
-                  </ul>
-                </li>
-                
-              </ul>
-            </nav>
+      <header>
+        <div class="navbar">
+          <div class="blocimage">
+            <a href="index.html"><img src="html5logo.png" alt="Logo html 5" class="logoHTML"/></a>
           </div>
-          <div class="titre">
-            <h1>Présentation HTML</h1>
-          </div>
-        </header>
-        
-        
-        <section id="definition" class="section">
-          <h2 class="titreSection">Définition HTML :</h2>
-          <p class="paragraphe">
-            L’HyperText Markup Language, généralement abrégé HTML, est le format de données conçu pour représenter les pages web.
-            C’est un langage de balisage permettant d’écrire de l’hypertexte, d’où son nom. 
-            HTML permet également de structurer sémantiquement et logiquement et de mettre en forme le contenu des pages, 
-            d’inclure des ressources multimédias dont des images, des formulaires de saisie, et des programmes informatiques. 
-            Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web.
-          </p>
-        </section>
+          <nav>
+            <ul class="menu">
+              <li class="lienMenu"><a href="#definition" class="lienAncre">Qu'est ce que le HTML ?</a></li>
+              <li class="lienMenu"><a href="#structure" class="lienAncre">Structure</a></li>
+              <li class="lienMenu">
+                <a href="#balises" class="lienAncre">Les balises</a>
+                <ul class="menu">
+                  <li class="lienSousMenu"><a href="#lien" class="lienAncre">Liens Hypertexte</a></li>
+                  <li class="lienSousMenu"><a href="#code" class="lienAncre">Code</a></li>
+                  <li class="lienSousMenu"><a href="#paragraphe" class="lienAncre">Paragraphe</a></li>
+                  <li class="lienSousMenu"><a href="#effets" class="lienAncre">Effets</a></li>
+                  <li class="lienSousMenu"><a href="#lideso" class="lienAncre">Liste désordonnée</a></li>
+                  <li class="lienSousMenu"><a href="#liordo" class="lienAncre">Liste ordonnée</a></li>
+                  <li class="lienSousMenu"><a href="#lidef" class="lienAncre">Liste de définitions</a></li>
+                  <li class="lienSousMenu"><a href="#prefor" class="lienAncre">Texte préformaté</a></li>
+                  <li class="lienSousMenu"><a href="#tableau" class="lienAncre">Les tableaux</a></li>
+                </ul>
+              </li>         
+            </ul>
+          </nav>
+        </div>
+        <div class="titre">
+          <h1>Présentation HTML</h1>
+        </div>
+      </header>
+       
+      <section id="definition" class="section">
+        <h2 class="titreSection">Définition HTML :</h2>
+        <p class="paragraphe">
+          L’HyperText Markup Language, généralement abrégé HTML, est le format de données conçu pour représenter les pages web.
+          C’est un langage de balisage permettant d’écrire de l’hypertexte, d’où son nom. 
+          HTML permet également de structurer sémantiquement et logiquement et de mettre en forme le contenu des pages, 
+          d’inclure des ressources multimédias dont des images, des formulaires de saisie, et des programmes informatiques. 
+          Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web.
+        </p>
+      </section>
           
-        <section id="structure" class="section">                
-          <h2 class="titreSection">Structure document HTML :</h2>
-          <pre class="code">
-            &lt;!DOCTYPE html&gt; &lt;!-- Définition du type de document --&gt;
-            &lt;html&gt;
-                &lt;head&gt;
-                    &lt;meta charset="utf-8" /&gt;  &lt;!-- Encodage du document (pour les caractères accentués par exemple)  --&gt;
-                    &lt;title> Titre page &lt;/title&gt;
-                &lt;/head&gt;
-                      
-                &lt;body&gt;
-                    Texte.....
-                  &lt;body/&gt;
-            &lt;/html&gt;
-          </pre>
-          <aside class="aside">
-            <pre>
-              Afficher "&amp;" en texte : &amp;amp;
-              Afficher "&lt;" en texte : &amp;lt;
-              Afficher "&gt;" en texte : &amp;gt;
-            </pre>
-          </aside>
-        </section>
+      <section id="structure" class="section">                
+        <h2 class="titreSection">Structure document HTML :</h2>
+        <pre class="code">
+          &lt;!DOCTYPE html&gt; &lt;!-- Définition du type de document --&gt;
+          &lt;html&gt;
+              &lt;head&gt;
+                  &lt;meta charset="utf-8" /&gt;  &lt;!-- Encodage du document (pour les caractères accentués par exemple)  --&gt;
+                  &lt;title> Titre page &lt;/title&gt;
+              &lt;/head&gt;
                      
-        <section class="section">
-          <h2 id="balises" class="titreSection">Les balises</h2>
+              &lt;body&gt;
+                  Texte.....
+                &lt;body/&gt;
+          &lt;/html&gt;
+        </pre>
+        <aside class="aside">
+          <pre>
+            Afficher "&amp;" en texte : &amp;amp;
+            Afficher "&lt;" en texte : &amp;lt;
+            Afficher "&gt;" en texte : &amp;gt;
+          </pre>
+        </aside>
+      </section>
+                     
+      <section class="section">
+        <h2 id="balises" class="titreSection">Les balises</h2>
+             
+        <article id="lien" class="article">
+          <h3 class="titreArticle">Les liens hypertexte : balises a</h3>
+          <a href="lien.html" target="_blank"> Voici un exemple de lien </a>
+        </article>
+          
+        <article id="code" class="article">
+          <h3 class="titreArticle">Affichage de code (php, pour l'exemple) : balise code</h3>
+          <pre class="code">
+            <code>
+              for(i=0; i&lt;10; i++){
+                echo i;
+              }
+            </code>
+          </pre>
+        </article>
+          
+        <article id="paragraphe"  class="article">
+          <h3 class="titreArticle">Paragraphe : balise p</h3>
+          <p class="paragraphe">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
+            Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
+            Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
+            Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
+            Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
+            Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
+          </p>
+          <p class="paragraphe">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
+            Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
+            Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
+            Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
+            Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
+            Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
+          </p>
+        </article>
               
-          <article id="lien" class="article">
-            <h3 class="titreArticle">Les liens hypertexte : balises a</h3>
-            <a href="lien.html" target="_blank"> Voici un exemple de lien </a>
-          </article>
-          
-          <article id="code" class="article">
-            <h3 class="titreArticle">Affichage de code (php, pour l'exemple) : balise code</h3>
-            <pre class="code">
-              <code>
-                for(i=0; i&lt;10; i++){
-                  echo i;
-                }
-              </code>
-            </pre>
-          </article>
-          
-          <article id="paragraphe"  class="article">
-            <h3 class="titreArticle">Paragraphe : balise p</h3>
-            <p class="paragraphe">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
-              Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
-              Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
-              Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
-              Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
-              Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
-            </p>
-            <p class="paragraphe">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna erat, id finibus lorem maximus ut. 
-              Vestibulum ex libero, ultricies non tellus vel, vehicula eleifend ante. 
-              Nam convallis enim eu purus scelerisque euismod. Mauris dictum risus sit amet elit dictum, at sodales magna gravida. 
-              Curabitur sed dolor sed ante tincidunt lacinia. In congue, tortor sit amet convallis imperdiet, erat sapien mollis erat, eget tincidunt risus mauris ut justo. 
-              Nulla commodo ipsum purus, vel sollicitudin nibh ornare vel. Nullam sed odio sem. Cras mollis tortor nec arcu eleifend tempus. In ornare est eu dolor interdum placerat. 
-              Suspendisse vel nibh porta, auctor quam sed, rhoncus metus.
-            </p>
-          </article>
+        <article id="effets"  class="article">
+          <h3 class="titreArticle">Effets sur texte</h3>
+          <ul>
+            <li>Balise strong : <strong>Texte</strong></li>
+            <li>Balise em : <em>Texte</em></li>
+            <li>Balise mark : <mark>Texte</mark></li>
+          </ul>
+        </article>
               
-          <article id="effets"  class="article">
-            <h3 class="titreArticle">Effets sur texte</h3>
-            <ul>
-              <li>Balise strong : <strong>Texte</strong></li>
-              <li>Balise em : <em>Texte</em></li>
-              <li>Balise mark : <mark>Texte</mark></li>
-            </ul>
-          </article>
-              
-          <article id="lideso"  class="article">
-            <h3 class="titreArticle">Liste désordonnée : ul / li</h3>
-            <ul class="lideso">
-              <li>Item 1</li>
-              <li>Item 2</li>
-            </ul>
-          </article>
+        <article id="lideso"  class="article">
+          <h3 class="titreArticle">Liste désordonnée : ul / li</h3>
+          <ul class="lideso">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </article>
           
-          <article id="liordo"  class="article">
-            <h3 class="titreArticle">Liste ordonnée : ol / li</h3>
-            <ol>
-              <li>Item 1</li>
-              <li>Item 2</li>
-            </ol>
-          </article>
+        <article id="liordo"  class="article">
+          <h3 class="titreArticle">Liste ordonnée : ol / li</h3>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+        </article>
           
-          <article id="lidef"  class="article">
-            <h3 class="titreArticle">Liste de définitions : dl / dt / dd</h3>
-            <dl>
-              <dt>Item 1</dt>
-                <dd> Definition item 1</dd>
-              <dt>Item 2</dt>
-                <dd> Definition item 2</dd>
-            </dl>
-          </article>
+        <article id="lidef"  class="article">
+          <h3 class="titreArticle">Liste de définitions : dl / dt / dd</h3>
+          <dl>
+            <dt>Item 1</dt>
+              <dd> Definition item 1</dd>
+            <dt>Item 2</dt>
+              <dd> Definition item 2</dd>
+          </dl>
+        </article>
             
-          <article id="prefor"  class="article">
-            <h3 class="titreArticle">Texte pré formaté : balise pre</h3>
-            <pre>
-              Lorem ipsum dolor sit amet, 
-              consectetur adipiscing elit. 
-              Cras dolor magna, commodo vel molestie vitae, 
-              ornare ac turpis. Fusce a.
-            </pre>
-          </article>
+        <article id="prefor"  class="article">
+          <h3 class="titreArticle">Texte pré formaté : balise pre</h3>
+          <pre>
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. 
+            Cras dolor magna, commodo vel molestie vitae, 
+            ornare ac turpis. Fusce a.
+          </pre>
+        </article>
               
-          <article id="tableau"  class="article">
-            <h3 class="titreArticle">Les tableaux</h3>
-            <p class="paragraphe">
-              En HTML, les tableaux sont construits sont un ensemble de lignes, qui contiennent des cellules (les colonnes ne sont pas représentées).
-            </p>
-            <p class="paragraphe">
-              Un tableau est défini grâce à la balise &lt;table&gt;&lt;/table&gt;
-            </p>
-            <p class="paragraphe">
-              Le titre du tableau est défini grâce à la balise &lt;caption&gt;&lt;/caption&gt;
-            </p>
-            <p class="paragraphe">
-              Une ligne du tableau est définie grâce à la balise &lt;tr&gt;&lt;/tr&gt;
-            </p>
-            <p class="paragraphe">
-              Une cellule du tableau est définie grâce à la balise &lt;td&gt;&lt;/td&gt;
-            </p>
-            <p class="paragraphe">
-              L'en-tête d'un tableau est défini grâce à la balise &lt;thead&gt;&lt;/thead&gt;. 
-              Chaque cellule d'en-tête sera définie par la balise &lt;th&gt;&lt;/th&gt; (cellules qui sont déclarées dans une ligne &lt;tr&gt;&lt;/tr&gt;
-            </p>
-            <p class="paragraphe">
-              Le corps du tableau est déclaré grâce à la balise &lt;tbody&gt;&lt;/tbody&gt;. Il contiendra les lignes qui contiendront donc les cellules.
-            </p>
-            <p class="paragraphe">
-              Le pied de tableau est déclaré grâce à la balise &lt;tfoot&gt;&lt;/tfoot&gt;. Il contiendra les lignes qui contiendront donc les cellules.
-            </p>
+        <article id="tableau"  class="article">
+          <h3 class="titreArticle">Les tableaux</h3>
+          <p class="paragraphe">
+            En HTML, les tableaux sont construits sont un ensemble de lignes, qui contiennent des cellules (les colonnes ne sont pas représentées).
+          </p>
+          <p class="paragraphe">
+            Un tableau est défini grâce à la balise &lt;table&gt;&lt;/table&gt;
+          </p>
+          <p class="paragraphe">
+            Le titre du tableau est défini grâce à la balise &lt;caption&gt;&lt;/caption&gt;
+          </p>
+          <p class="paragraphe">
+            Une ligne du tableau est définie grâce à la balise &lt;tr&gt;&lt;/tr&gt;
+          </p>
+          <p class="paragraphe">
+            Une cellule du tableau est définie grâce à la balise &lt;td&gt;&lt;/td&gt;
+          </p>
+          <p class="paragraphe">
+            L'en-tête d'un tableau est défini grâce à la balise &lt;thead&gt;&lt;/thead&gt;. 
+            Chaque cellule d'en-tête sera définie par la balise &lt;th&gt;&lt;/th&gt; (cellules qui sont déclarées dans une ligne &lt;tr&gt;&lt;/tr&gt;
+          </p>
+          <p class="paragraphe">
+            Le corps du tableau est déclaré grâce à la balise &lt;tbody&gt;&lt;/tbody&gt;. Il contiendra les lignes qui contiendront donc les cellules.
+          </p>
+          <p class="paragraphe">
+            Le pied de tableau est déclaré grâce à la balise &lt;tfoot&gt;&lt;/tfoot&gt;. Il contiendra les lignes qui contiendront donc les cellules.
+          </p>
                 
-            Exemple :
-            <pre class="code">
-              &lt;table&gt;
-                &lt;caption&gt;Passagers du vol 377&lt;/caption&gt;
-                          
-                &lt;thead&gt; &lt;!-- En-tête du tableau --&gt;
-                  &lt;tr&gt;
-                    &lt;th&gt;Nom&lt;/th&gt;
-                    &lt;th&gt;Âge&lt;/th&gt;
-                    &lt;th&gt;Pays&lt;/th&gt;
-                  &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt; &lt;!-- Corps du tableau --&gt;
-                  &lt;tr&gt;
-                    &lt;td&gt;Carmen&lt;/td&gt;
-                    &lt;td&gt;33 ans&lt;/td&gt;
-                    &lt;td&gt;Espagne&lt;/td&gt;
-                  &lt;/tr&gt;
-                  &lt;tr&gt;
-                    &lt;td&gt;Luc&lt;/td&gt;
-                    &lt;td&gt;26 ans&lt;/td&gt;
-                    &lt;td&gt;États-Unis&lt;/td&gt;
-                  &lt;/tr&gt;
-                  &lt;tr&gt;
-                &lt;/tbody&gt;
-                &lt;tfoot&gt; &lt;!-- Pied de tableau --&gt;
-                  &lt;tr&gt;
-                    &lt;th&gt;Nom&lt;/th&gt;
-                    &lt;th&gt;Âge&lt;/th&gt;
-                    &lt;th&gt;Pays&lt;/th&gt;
-                  &lt;/tr&gt;
-                &lt;/tfoot&gt;
-              &lt;/table&gt;
-            </pre>
-            <p class="paragraphe">
-              La fusion de cellules (largeur de cellule) se fait dans la balise de cellule, avec l'attribut "colspan" qui prendra la valeur du nombre de cellules voulues. 
-            </p>
-            <pre>
-              &lt;td colspan="2"&gt;&lt;/td&gt;.
-            </pre>
-            <p class="paragraphe">
-              La fusion de lignes (hauteur de cellule) se fait dans la balise de cellule, avec l'attribut "rowspan" qui prendra la valeur du nombre de lignes voulues.
-            </p>
-            <pre>
-              &lt;td rowlspan="2"&gt;&lt;/td&gt;.
-            </pre>
+          Exemple :
+          <pre class="code">
+            &lt;table&gt;
+              &lt;caption&gt;Passagers du vol 377&lt;/caption&gt;
+                        
+              &lt;thead&gt; &lt;!-- En-tête du tableau --&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Nom&lt;/th&gt;
+                  &lt;th&gt;Âge&lt;/th&gt;
+                  &lt;th&gt;Pays&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt; &lt;!-- Corps du tableau --&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Carmen&lt;/td&gt;
+                  &lt;td&gt;33 ans&lt;/td&gt;
+                  &lt;td&gt;Espagne&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Luc&lt;/td&gt;
+                  &lt;td&gt;26 ans&lt;/td&gt;
+                  &lt;td&gt;États-Unis&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+              &lt;/tbody&gt;
+              &lt;tfoot&gt; &lt;!-- Pied de tableau --&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Nom&lt;/th&gt;
+                  &lt;th&gt;Âge&lt;/th&gt;
+                  &lt;th&gt;Pays&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/tfoot&gt;
+            &lt;/table&gt;
+          </pre>
+          <p class="paragraphe">
+            La fusion de cellules (largeur de cellule) se fait dans la balise de cellule, avec l'attribut "colspan" qui prendra la valeur du nombre de cellules voulues. 
+          </p>
+          <pre>
+            &lt;td colspan="2"&gt;&lt;/td&gt;.
+          </pre>
+          <p class="paragraphe">
+            La fusion de lignes (hauteur de cellule) se fait dans la balise de cellule, avec l'attribut "rowspan" qui prendra la valeur du nombre de lignes voulues.
+          </p>
+          <pre>
+            &lt;td rowlspan="2"&gt;&lt;/td&gt;.
+          </pre>
             
-            <p class="paragraphe">
-              La balise &lt;colgroup&gt;&lt;/colgroup&gt; définit un groupe de colonnes au sein d'un tableau.
-            </p>
-            <p class="paragraphe">
-              La balise &lt;col&gt;&lt;/col&gt; définit une colonne appartenant à un tableau. On la trouve généalement au sein d'une balise &lt;colgroup&gt;&lt;/colgroup&gt;
-            </p>
-          </article>
-        </section>
+          <p class="paragraphe">
+            La balise &lt;colgroup&gt;&lt;/colgroup&gt; définit un groupe de colonnes au sein d'un tableau.
+          </p>
+          <p class="paragraphe">
+            La balise &lt;col&gt;&lt;/col&gt; définit une colonne appartenant à un tableau. On la trouve généalement au sein d'une balise &lt;colgroup&gt;&lt;/colgroup&gt;
+          </p>
+        </article>
+      </section>
           
-        <footer class="footer">
-          Johann VAY 2017
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML"  target="_blank">Infos HTML</a>
-        </footer>
-
-    </body>
+      <footer class="footer">
+        Johann VAY 2017
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML"  target="_blank">Infos HTML</a>
+      </footer>
+  </body>
 </html>

@@ -21,9 +21,13 @@
   display: inline;
 }
 
+.menu{
+  padding-left: 20px;
+}
+
 .lienMenu {
   display: block;
-  padding: 8px 16px;
+  padding: 8px;
   font-size: 22px;
 }
 .lienAncre{
@@ -105,8 +109,3 @@
   border-color: red;
   border-style: solid;
 }
-
-/*
-.lideso{
-  list-style-type: disc;
-}*/
