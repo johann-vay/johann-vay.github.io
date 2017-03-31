@@ -156,6 +156,9 @@
   .navbar {
     order: 0; /* nav reprend sa place */
   }
+  .header, .footer{
+    width:100vh;
+  }
 }
 
 
