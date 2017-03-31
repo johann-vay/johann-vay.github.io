@@ -47,7 +47,7 @@
 .section{
   margin-top: 30px;
   margin-left: 320px;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .titreSection{
@@ -80,47 +80,6 @@
   width: 70%;
 }
 
-.exh1 {
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  margin: .67em 0;
-}
- 
-.exh2 {
-  display: block;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: .83em 0;
-}
- 
-.exh3 {
-  display: block;
-  font-size: 1.17em;
-  font-weight: bold;
-  margin: 1em 0;
-}
- 
-.exh4 {
-  display: block;
-  font-weight: bold;
-  margin: 1.33em 0;
-}
- 
-.exh5 {
-  display: block;
-  font-size: 0.83em;
-  font-weight: bold;
-  margin: 1.67em 0;
-}
- 
-.exh6 {
-  display: block;
-  font-size: 0.67em;
-  font-weight: bold;
-  margin: 2.33em 0;
-}
-
 .footer{
   margin-top: 20px;
   text-align; center;
@@ -146,3 +105,8 @@
   border-color: red;
   border-style: solid;
 }
+
+/*
+.lideso{
+  list-style-type: disc;
+}*/
